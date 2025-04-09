@@ -28,10 +28,10 @@ class AppCatalogoPeliculas:
                     self.servicio_peliculas.eliminar_archivo_peliculas()
                 elif opcion == 4:
                     print('Gracias, vuelva pronto.')
-                    break # Con la palabra reservada break rompemos el ciclo while
+                    break 
                 else:
                     print(f'La opción seleccionada {opcion} no es válida, pruebe otra.')  
-            except ValueError:  # Excepción que aparece cuando se proporciona un caracter inválido.
+            except ValueError:  
                 print('Error: Introduce un número válido')
             except Exception as e:
                 print(f'Ocurrió un error: {e}')
